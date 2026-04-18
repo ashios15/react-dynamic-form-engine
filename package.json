@@ -1,15 +1,16 @@
 {
-  "name": "@ashishjoshi/react-dynamic-form-engine",
+  "name": "@ashios15/react-dynamic-form-engine",
   "version": "1.0.0",
   "description": "A headless, config-driven multi-step form engine built with React 19 + TypeScript + React Hook Form. Supports conditional fields, real-time preview, Zod validation, and i18n.",
+  "sideEffects": false,
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     }
   },
   "files": [
@@ -67,6 +68,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ashishjoshi/react-dynamic-form-engine"
+    "url": "https://github.com/ashios15/react-dynamic-form-engine"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
