@@ -1,35 +1,35 @@
 # react-dynamic-form-engine
 
-[![npm version](https://img.shields.io/npm/v/@ashishjoshi/react-dynamic-form-engine)](https://www.npmjs.com/package/@ashishjoshi/react-dynamic-form-engine)
-[![CI](https://github.com/ashishjoshi/react-dynamic-form-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/ashishjoshi/react-dynamic-form-engine/actions)
+[![npm version](https://img.shields.io/npm/v/@ashios15/react-dynamic-form-engine)](https://www.npmjs.com/package/@ashios15/react-dynamic-form-engine)
+[![CI](https://github.com/ashios15/react-dynamic-form-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/ashios15/react-dynamic-form-engine/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 A **headless, config-driven multi-step form engine** built with React 19, TypeScript, React Hook Form, and Zod.
 
-> Drop in a JSON config → get a fully functional multi-step form with validation, conditional fields, real-time preview, and i18n support.
+> Drop in a JSON config and get a fully functional multi-step form with validation, conditional fields, real-time preview, and i18n support.
 
 <!-- ![Demo](./docs/demo.gif) -->
 
 ## Features
 
-- 🧩 **Config-driven** — Define forms with a simple JSON/TS schema
-- 🪜 **Multi-step** — Built-in step navigation with progress indicator
-- 🎯 **Conditional fields** — Show/hide fields based on other field values
-- ✅ **Zod validation** — Type-safe schema validation per field or step
-- 👀 **Live preview** — Real-time preview panel showing entered values
-- 🎨 **Headless mode** — Full render-prop API for custom UI
-- 🌍 **i18n-ready** — Namespace support for internationalization
-- ♿ **Accessible** — ARIA labels, roles, and keyboard navigation
-- 📦 **Tiny** — Zero CSS dependency, tree-shakeable
+- **Config-driven** — Define forms with a simple JSON/TS schema
+- **Multi-step** — Built-in step navigation with progress indicator
+- **Conditional fields** — Show/hide fields based on other field values
+- **Zod validation** — Type-safe schema validation per field or step
+- **Live preview** — Real-time preview panel showing entered values
+- **Headless mode** — Full render-prop API for custom UI
+- **i18n-ready** — Namespace support for internationalization
+- **Accessible** — ARIA labels, roles, and keyboard navigation
+- **Tiny** — Zero CSS dependency, tree-shakeable
 
 ## Quick Start
 
 ```bash
-npm install @ashishjoshi/react-dynamic-form-engine react-hook-form zod @hookform/resolvers
+npm install @ashios15/react-dynamic-form-engine react-hook-form zod @hookform/resolvers
 ```
 
 ```tsx
-import { DynamicForm, type FormConfig } from '@ashishjoshi/react-dynamic-form-engine';
+import { DynamicForm, type FormConfig } from '@ashios15/react-dynamic-form-engine';
 import { z } from 'zod';
 
 const config: FormConfig = {
@@ -146,4 +146,4 @@ npm run build        # Build library
 
 ## License
 
-MIT © [Ashish Joshi](https://github.com/ashishjoshi)
+MIT © [Ashish Joshi](https://github.com/ashios15)
