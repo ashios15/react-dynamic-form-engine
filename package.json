@@ -1,6 +1,6 @@
 {
   "name": "@ashios15/react-dynamic-form-engine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A headless, config-driven multi-step form engine built with React 19 + TypeScript + React Hook Form. Supports conditional fields, real-time preview, Zod validation, and i18n.",
   "sideEffects": false,
   "main": "dist/index.js",
