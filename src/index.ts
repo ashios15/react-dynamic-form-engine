@@ -13,6 +13,16 @@ export { useFormEngine } from './hooks/useFormEngine';
 // Utilities
 export { evaluateCondition, shouldShowField, getVisibleFieldNames } from './utils/conditions';
 
+// Static analyzer
+export { lint, formatReport } from './lint/lint';
+export type {
+  LintSeverity,
+  LintRuleId,
+  LintLocation,
+  LintIssue,
+  LintReport,
+} from './lint/lint';
+
 // Types
 export type {
   FieldType,

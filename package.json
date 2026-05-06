@@ -1,16 +1,24 @@
 {
   "name": "@ashios15/react-dynamic-form-engine",
-  "version": "1.0.1",
-  "description": "A headless, config-driven multi-step form engine built with React 19 + TypeScript + React Hook Form. Supports conditional fields, real-time preview, Zod validation, and i18n.",
+  "version": "1.1.0",
+  "description": "Headless, config-driven multi-step form engine for React 19 with a pure static analyzer (form-lint CLI) that catches config bugs at build time.",
   "sideEffects": false,
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "bin": {
+    "form-lint": "dist/form-lint.js"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
+    },
+    "./lint": {
+      "types": "./dist/lint.d.ts",
+      "import": "./dist/lint.mjs",
+      "require": "./dist/lint.js"
     }
   },
   "files": [
@@ -18,11 +26,12 @@
   ],
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "build": "tsup",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "lint": "eslint src --ext .ts,.tsx",
+    "lint:code": "eslint src --ext .ts,.tsx",
+    "form-lint": "tsx scripts/form-lint.ts",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prepublishOnly": "npm run build"
@@ -40,6 +49,7 @@
     "@storybook/react-vite": "^8.4.0",
     "@testing-library/jest-dom": "^6.6.0",
     "@testing-library/react": "^16.1.0",
+    "@types/node": "^22.10.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "eslint": "^9.0.0",
@@ -48,6 +58,7 @@
     "react-hook-form": "^7.54.0",
     "storybook": "^8.4.0",
     "tsup": "^8.3.0",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.0",
     "vitest": "^2.1.0",
     "zod": "^3.23.0"
@@ -58,6 +69,8 @@
     "form-engine",
     "multi-step",
     "dynamic-form",
+    "form-linter",
+    "static-analysis",
     "react-hook-form",
     "zod",
     "typescript",
@@ -68,7 +81,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ashios15/react-dynamic-form-engine"
+    "url": "git+https://github.com/ashios15/react-dynamic-form-engine.git"
+  },
+  "homepage": "https://github.com/ashios15/react-dynamic-form-engine#readme",
+  "bugs": {
+    "url": "https://github.com/ashios15/react-dynamic-form-engine/issues"
   },
   "publishConfig": {
     "access": "public"
